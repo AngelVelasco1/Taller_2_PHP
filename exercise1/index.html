@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" type="module" defer></script>
+
+    <style>
+        * {
+            font-family: system-ui;
+        }
+        #calculate {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            margin: 0  auto;
+            gap: 15px;
+            margin-block-end: 20px;
+        }
+        label {
+            font-size: 1.4rem;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            color:rgb(80, 130, 255)
+        }
+        input {
+            border-radius: 4px;
+            border-color:rgb(80, 130, 255);
+            padding: 5px;
+
+        }
+        input[type="submit"] {
+            background-color: rgb(80, 130, 255);
+            outline: none;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+            font-size: 1.1rem
+        }
+        #results {
+            padding: 20px;
+            width: 20%;
+            margin: 0 auto;
+            background-color: bisque;
+            border-radius: 4px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="calculate">
+        <label for="">Enter your notes</label>
+        <input type="text" name="note1" pattern="[0-9]" required>
+        <input type="text" name="note2" pattern="[0-9]" required>
+        <input type="text" name="note3" pattern="[0-9]" required>
+        <input type="submit" value="Result" pattern="[0-9]">
+    </form>
+    <p id="results"></p>
+</body>
+
+</html>
