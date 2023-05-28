@@ -7,4 +7,15 @@
             return $result;
         }
     }
+    class exercise2 {
+        public static function toNumber(array $numbers_values) {
+            $number = $numbers_values['number'];
+            $result = self::logic($number);
+            return $result;
+        }
+        public static function logic (float $number) {
+            ($number % 2 == 0) ? $result = "The number is even" : $result = "The number is odd";
+            return $result;
+        }
+    }
 ?>
