@@ -18,4 +18,15 @@
             return $result;
         }
     }
+
+    class exercise3 {
+        public static function logic(array $data): string {
+            $intensity = $data['intensity'];
+            $resistance = $data['resistance'];
+            $voltage = $intensity * $resistance;
+
+            $result = "The voltage is $voltage";
+            return $result;
+        }
+    }
 ?>
